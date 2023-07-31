@@ -9,7 +9,7 @@
       <h1 class="text-4xl mb-2">{{ route.params.city }}</h1>
       <p class="text-sm mb-12">{{ dateBuilder() }}</p>
       <p class="text-8xl mb-8">{{ Math.round(weatherData.main.temp)}}°C</p>
-      <p>Feels Like{{ Math.round(weatherData.main.feels_like)}}°C</p>
+      <p>Feels Like {{ Math.round(weatherData.main.feels_like)}}°C</p>
       <p class="capitalize">{{ weatherData.weather[0].description}}</p>
       <img class="w-[150px] h-auto" :src="`http://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`" alt="">
     </div>
